@@ -1,5 +1,15 @@
 import React, { useState, useEffect } from "react";
 
+// Import ice cream images
+import strawberryMain from "../assets/images/strawberry-main.png";
+import strawberryThumb from "../assets/images/strawberry-thumb.png";
+import blueberryMain from "../assets/images/blueberry-main.png";
+import blueberryThumb from "../assets/images/blueberry-thumb.png";
+import chocolateMain from "../assets/images/chocolate-main.png";
+import chocolateThumb from "../assets/images/chocolate-thumb.png";
+import evergreenMain from "../assets/images/evergreen-main.png";
+import evergreenThumb from "../assets/images/evergreen-thumb.png";
+
 // Component to inject the Google Font stylesheet into the document head.
 const GoogleFont = () => {
   useEffect(() => {
@@ -33,31 +43,31 @@ const AnimationStyles = () => (
   `}</style>
 );
 
-// Data for the ice cream flavors with high-quality, reliable image links.
+// Data for the ice cream flavors with local images.
 const iceCreams = [
   {
     name: "Strawberry cone",
     bgColor: "#F4557F",
-    mainImage: "https://i.ibb.co/68K1g3w/pink-main.png",
-    thumbnail: "https://i.ibb.co/SvH25zB/pink-thumb.png",
+    mainImage: strawberryMain,
+    thumbnail: strawberryThumb,
   },
   {
     name: "Blueberry cone",
     bgColor: "#4B86DE",
-    mainImage: "https://i.ibb.co/yqQx1Nf/blue-main.png",
-    thumbnail: "https://i.ibb.co/RzcF2rC/blue-thumb.png",
+    mainImage: blueberryMain,
+    thumbnail: blueberryThumb,
   },
   {
     name: "Chocolate cone",
     bgColor: "#9F5B38",
-    mainImage: "https://i.ibb.co/pnvv1c8/chocolate-main.png",
-    thumbnail: "https://i.ibb.co/L95mK4D/chocolate-thumb.png",
+    mainImage: chocolateMain,
+    thumbnail: chocolateThumb,
   },
   {
     name: "Evergreen cone",
     bgColor: "#4CAF50",
-    mainImage: "https://i.ibb.co/vB04Tz4/green-main.png",
-    thumbnail: "https://i.ibb.co/Y0j5YCM/green-thumb.png",
+    mainImage: evergreenMain,
+    thumbnail: evergreenThumb,
   },
 ];
 
