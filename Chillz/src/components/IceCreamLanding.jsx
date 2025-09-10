@@ -1,16 +1,16 @@
 /**
  * Chillz Ice Cream Landing Page Component
- * 
+ *
  * A fully interactive ice cream showcase with smooth animations,
  * responsive design, and dynamic flavor switching capabilities.
- * 
+ *
  * Features:
  * - 4 ice cream flavors with individual color schemes
  * - Smooth slide-in/slide-out animations
- * - Interactive thumbnail hover effects  
+ * - Interactive thumbnail hover effects
  * - Responsive typography and layout
  * - Custom cursive fonts for branding
- * 
+ *
  * @author Chillz Team
  * @version 1.0.0
  */
@@ -54,7 +54,7 @@ const GoogleFont = () => {
  * AnimationStyles Component
  * Contains all CSS animations and styles for the ice cream landing page
  * Uses CSS-in-JS with template literals for dynamic styling
- * 
+ *
  * Key Animations:
  * - slideInRight: Main image entrance animation with CSS variables
  * - slideOutLeft: Main image exit animation
@@ -194,7 +194,7 @@ const AnimationStyles = () => (
  * Per-flavor positioning corrections to ensure visual consistency
  * Each flavor cone has different dimensions, so we adjust position and scale
  * to maintain consistent bottom alignment and overall appearance
- * 
+ *
  * @constant {Object} flavourCorrections - Adjustment values for each flavor
  * @property {string} toY - Vertical offset in pixels
  * @property {number} toS - Scale multiplier for size adjustment
@@ -209,7 +209,7 @@ const flavourCorrections = {
 /**
  * Ice cream flavor data array
  * Contains all available flavors with their associated colors and images
- * 
+ *
  * @constant {Array} iceCreams - Array of ice cream flavor objects
  * @property {string} name - Flavor name identifier
  * @property {string} bgColor - Background color hex code for that flavor
@@ -247,7 +247,7 @@ const iceCreams = [
  * Header Component
  * Renders the top navigation bar with brand name, navigation links, and CTA button
  * Responsive design that hides nav links on mobile devices
- * 
+ *
  * @returns {JSX.Element} Header navigation component
  */
 const Header = () => (
@@ -279,14 +279,14 @@ const Header = () => (
 
 /**
  * Main App Component - Ice Cream Landing Page
- * 
+ *
  * Features:
  * - Interactive flavor selection with smooth animations
  * - Responsive design optimized for all screen sizes
  * - Dynamic background colors based on selected flavor
  * - Slide-in/slide-out transitions for main ice cream image
  * - Thumbnail hover effects with active state management
- * 
+ *
  * @returns {JSX.Element} Complete ice cream landing page
  */
 export default function App() {
@@ -299,7 +299,7 @@ export default function App() {
   /**
    * Handles flavor selection with coordinated animations
    * Prevents multiple simultaneous transitions and ensures smooth visual flow
-   * 
+   *
    * @param {number} newIndex - Index of the newly selected flavor
    */
   const handleFlavorChange = (newIndex) => {
@@ -407,8 +407,8 @@ export default function App() {
                 alt={activeFlavor.name}
                 className={`ice-cream-image ${
                   isTransitioning
-                    ? "animate-slide-out-left"  // Exit animation
-                    : "animate-slide-in-right"  // Enter animation
+                    ? "animate-slide-out-left" // Exit animation
+                    : "animate-slide-in-right" // Enter animation
                 }`}
                 style={{
                   ...imageCssVars, // Apply dynamic CSS custom properties
